@@ -1,0 +1,53 @@
+body{
+  background-color: green;
+  color: green;
+  padding: 25px;
+}
+#inputBody{
+    padding-top: 15px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    background-color: black;
+    font-color: green;
+    font-size: 30px;
+    border-width: 10px;
+    
+}
+
+#coords{
+    padding-top: 15px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    background-color: #696969;
+    color: black;
+    border-width: 10px;
+   word-wrap: break-word;
+   font-size: 25px;
+    
+}
+
+button{
+   font-size: 20px;
+}
+ 
+footer { 
+  display: block;
+  color: black;
+  //position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+ // padding: 1rem;
+  text-align: center;
+  font-size: 20px;
+
+}
+.wik{
+   background-color: #2BAF27;
+   font-size: 20px;
+}
+.wik:hover{
+   background-color: #EBEB22;
+}
