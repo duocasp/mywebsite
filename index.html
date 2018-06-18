@@ -1,106 +1,112 @@
+<!DOCTYPE html>
+<html>
 <head>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Nixie One" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Khula
-    " rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Julius Sans One
-    " rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://duocasp.github.io/css/main.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Nixie One" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Khula" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Julius Sans One" rel="stylesheet" type="text/css">
+    
+	<link rel="stylesheet" href="https://duocasp.github.io/css/main.css">
+    <!--<link rel="stylesheet" href="/mywork/main.css"> -->
+  
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
 </head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-<body data-spy="scroll" data-target=".navbar">
-<nav class="navbar navbar-inverse navbar-fixed-top" id="nav_men" data-offset="150">
+<nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
       <a class="navbar-brand" href="#"><i class="fa fa-fire"></i><i class="fnt-brand">DuoCasp</i></a>
     </div>
-     <ul class="nav navbar-nav navbar-right">
-           <li class="fnt-nav"><a href="#about">About</a></li>
-           <li class="fnt-nav"><a href="#portfolio">Portfolio</a></li>
-           <li class="fnt-nav"><a href="#contact">Contact</a></li>
-    </ul> 
+    <div>
+      <div class="collapse navbar-collapse navbar-right fnt-nav" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          
+        </ul>
+      </div>
+    </div>
   </div>
- </nav>
+</nav>    
 
 <div id="about" class="container-fluid">
-  <h1>DuoCasp</h1>
-  <h1>----------------</h1>
-  <div class="row">
-    <div class="col-xs-8">
-    
-      <ul>
-       <li class="body-text text-left"> 
-      Aspiring Front-end developer
-      </li>
-        <li class="body-text text-left">Portfolio 1st project</li>
-    <li class="body-text text-left">Many more to learn and explore</li>
-    <li class="body-text text-left">Coffee helps as well as playing tennis</li>
-  </ul>  
-      
-      </div>
-    <div class="col-xs-4">
-  <img class="img-responsive thick-green-border" src="https://media-private.canva.com/MACfdSvuaq0/1/thumbnail.png?response-expires=Mon%2C%2028%20Aug%202017%2023%3A54%3A27%20GMT&AWSAccessKeyId=AKIAJWF6QO3UH4PAAJ6Q&Expires=1503964467&Signature=auDqJsms9HEFRyqCL3oXdZ40VkU%3D" alt="Luan logo "></a></div>
-</div>
+  <h1>About</h1>
+   <p class="about-contact">about me</p>
   </div>
-  
-
 <div id="portfolio" class="container-fluid">
   <h1>Portfolio</h1>
-  <h1>-----------</h1>
-  <p class="portfolio-text">Projects done in CodePen</p>
-  <div class="row container-fluid">
-   <div class="col-xs-4 works img-responsive"> <a href="http://duocasp.github.io/mywebsite/random_quote.html"><div class="box"><iframe scrolling='no' 
-
-src="http://duocasp.github.io/mywebsite/random_quote.html" width = "100%" height = "100%"></iframe></div></a>Random Quote Generator</div>
-    
-   <div class="col-xs-4 works img-responsive"> <a href="http://duocasp.github.io/mywebsite/wikiViewer.html"><div class="box"><iframe scrolling='no' 
-
-src="http://duocasp.github.io/mywebsite/wikiViewer.html" width = "100%" height = "100%"></iframe></div></a>Wikipedia Viewer</div>
-    <div class="col-xs-4 works img-responsive">will update soon...</div>
-       
+   <p class="about-contact"> freecodecamp projects</p>
   </div>
-</div>
-
-  <div id="contact" class="container-fluid">
   
-   <h1>Contact</h1>
-
-    <div class="row">
-      <div class="col-xs-6">
-    <form action="/action_page.php">
-    <div class="form-group">
-      <label for="email">Email:</label>
-      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-    </div>
-    <div class="form-group">
-      <label for="comment">Comment:</label>
-  <textarea class="form-control" rows="5" id="comment" placeholder="type message here"></textarea>
-    <button type="submit" class="btn btn-primary" id="submit">Submit</button>
-      </form></div>
-      <h2>Follow me:</h2>
+  
+  
+<div id="contact" class="container-fluid">
+  <h1 align="center">Contact Me</h1>
+    <div class="container-fluid" align="center">
+	  
+	
+	   <form>
+  <ul class="wrapper">
+    <li class="form-row">
+      <label for="name">NAME:</label>
+      <input type="text" id="name" required>
+    </li>
+    <li class="form-row">
+      <label for="email">EMAIL:</label>
+      <input type="email" id="email" required>
+    </li>
+    <li class="form-row">
+      <label for="phone">PHONE:</label>
+      <input type="tel" id="phone">
+    </li>
+	<li class="form-row">
+      <label for="subject">SUBJECT:</label>
+      <input type="text" id="subject" required>
+    </li>
+	<li class="form-row">
+      <label for="message">MESSAGE:</label>
+      <textarea class="form-control" rows="5" id="comment" placeholder="type message here" required></textarea>
+    </li>
+    <li class="form-row">
+	 <label for="submit"></label>
+      <button type="submit">Submit</button>
+    </li>
+  </ul>
+</form>
+	  
+	
+	</div>
       
-      <button class="btn round-border"><a href="https://twitter.com/?lang=en" target="_blank"><i class="fa fa-twitter"></i></a></button>
-      <button class="btn round-border"><a href="https://codepen.io/LightOdus/" target="_blank"><i class="fa fa-codepen"></i></a> </button>
-      <button class="btn round-border"><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook text-center"></i></a> </button>
-      <button class="btn round-border"><a href="https://www.freecodecamp.org/fccb0daec9f" target="_blank"><i class="fa fa-free-code-camp"></i></a> </button>
-         
-    </div> 
-   </div>  
- </div>
- </body>
+      <div align="center">
+		<button class="btn round-border"><a href="https://twitter.com/?lang=en" target="_blank"><i class="fa fa-twitter"></i></a></button>
+		<button class="btn round-border"><a href="https://codepen.io/LightOdus/" target="_blank"><i class="fa fa-codepen"></i></a> </button>
+		<button class="btn round-border"><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook text-center"></i></a> </button>
+		<button class="btn round-border"><a href="https://www.freecodecamp.org/duocasp" target="_blank"><i class="fa fa-free-code-camp"></i></a> </button>
+       </div>  
+  </div>
 
-
-
-
+</body>
 <footer>
  <div class="container-fluid"> 
-      <div class="fnt-brand text-center">OdusCasper <i class="fa fa-copyright"></i> 2017  All Rights Reserved</div>
+      <div class="fnt-brand text-center">OdusCasper <i class="fa fa-copyright fnt-brand"></i> 2017  All Rights Reserved</div>
     
     
   
   </div>  
 </footer>
+</html>
