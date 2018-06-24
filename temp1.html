@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--<meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+<meta name="viewport" content="width=1024">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+.container {
+   background-color: black;
+   position: relative;
+   width: 100%;
+   padding-top: 100%; /* 1:1 Aspect Ratio */
+}
+
+.text {
+   position:  absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   text-align: center;
+   font-size: 20px;
+   color: white;
+}
+/**
+.wrapper {
+    background-color: black;
+    list-style-type: none;
+    padding: 0;
+    border-radius: 3px;
+  }
+  .form-row {
+    display: flex;
+    justify-content: flex-end;
+    padding: .5px;
+  }
+  .form-row > label {
+   padding: .5px 1px .5px 0;
+    flex: 1;
+  }
+  .form-row > input {
+    flex: 5;
+  }
+  .form-row > textarea {
+    flex: 5;
+	border: 0;
+  }
+  .form-row > input,
+  .form-row > button {
+    padding: .5px;
+	flex: 5;
+  }
+  .form-row > button {
+   background: gray;
+   color: white;
+   border: 0;
+   padding: .5px;
+   flex: 5;
+   
+  }**/ 
+  
+  form{
+	background-color: green;
+	width: 300px;
+	align: center;
+  }	 
+	  
+ul {
+  list-style-type: none;
+}	 
+
+.tab1{
+  background-color: green;
+  text-align: right;
+} 
+
+.tab2{
+  background-color: yellow;
+  text-align: left;
+} 
+
+</style>
+</head>
+<body>
+
+<h2>Maintain Aspect Ratio 1:1</h2>
+<p>Resize the window to see the effect.</p>
+
+<div class="container"> 
+ <div class="text">1:1 Aspect ratio
+ 
+  <h1 align="center">Contact Me</h1>
+    <p>sdgfsddg</p>
+	  <div class="row">
+	    <div class="col-xs-4 tab1">
+		  <h1>div1</h1>
+		</div>
+		
+		<div class="col-xs-8 tab2">
+		 <h1>div2</h1>
+		 <ul>
+		  <li><input type="text" id="name" required></li>
+		  <li><input type="email" id="email" required></li>
+		  <li><input type="tel" id="phone"></li>
+		  <li><input type="text" id="subject" required></li>
+		  <li><textarea rows="5" cols="40" id="comment" placeholder="type message here" required></textarea></li>
+		</ul>
+		</div>
+	  
+	  
+	  </div>
+	
+<!--	   
+  <ul class="wrapper">
+    <li class="form-row">
+      <label for="name">NAME:</label>
+      <input type="text" id="name" required>
+    </li>
+    <li class="form-row">
+      <label for="email">EMAIL:</label>
+      <input type="email" id="email" required>
+    </li>
+    <li class="form-row">
+      <label for="phone">PHONE:</label>
+      <input type="tel" id="phone">
+    </li>
+	<li class="form-row">
+      <label for="subject">SUBJECT:</label>
+      <input type="text" id="subject" required>
+    </li>
+	<li class="form-row">
+      <label for="message">MESSAGE:</label>
+      <textarea class="form-control" rows="5" id="comment" placeholder="type message here" required></textarea>
+    </li>
+    <li class="form-row">
+	 <label for="submit"></label>
+      <button type="submit">Submit</button>
+    </li>
+  </ul>
+-->
+	  
+	
+
+</div>
+
+</body>
+</html>
