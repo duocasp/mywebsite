@@ -11,12 +11,12 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	
 	<script src="https://duocasp.github.io/mywebsite/tile.js"></script>
+
 <style>
  
  html,body{
    background: url("http://www.duocasp.xyz/bground3.jpg");
    background-position: center center;  
-  // background-size: cover; 
    background-color: hsl(152, 63%, 40%);
    height: 100%;
  }
@@ -24,8 +24,8 @@
  footer{
    position: fixed;
    bottom: 0;
-  // background-color: hsl(152, 63%, 40%);
-   color: #f5f5f5 ; //hsl(55, 97%, 53%);
+  
+   color: #f5f5f5 ; 
    text-align: left;
    padding-left: 5%;
    padding-top: 1%;
@@ -36,8 +36,8 @@
  .heading{
    position: fixed;
    top: 0;
-  // background-color: hsl(152, 63%, 40%);
-   color: #F7B733; //hsl(55, 97%, 53%);
+  
+   color: #FFFD00;
    text-align: left;
    padding-left: 5%;
    padding-top: 1%;
@@ -52,7 +52,7 @@
   width: 35%;
   height: 80%;
   float: left;
- //background-color: black ;
+ 
   color: green;
  }
  
@@ -62,10 +62,14 @@
   width: 90%;
   height: 75%;
   float: right;
- // background-color: hsl(60, 98%, 74%);
   color: black;
+ 
  }
 
+  * {
+    box-sizing: border-box;
+}
+  
  .tile {
     display: inline-block;
     box-sizing: border-box;
@@ -79,14 +83,15 @@
    color: white;
    font-size: 5.5vw;
    
+   
 }
 
 .tile[v2] {
-    height: 310px;
+    height: 310px
 }
 
 .tile[h2] {
-    width: calc(50% - 10px);
+    width: calc(50% - 11px);
 	
 }
 
@@ -96,49 +101,49 @@
    
 }
 
-#tile1{
+#tile-1{
   background-color: hsl(128, 75%, 56%); 
   
   
 }
 
-#tile2{
+#tile-2{
  background-color: hsl(128, 75%, 56%);
  
 }
-#tile3{
+#tile-3{
   background-color:  hsl(195, 70%, 54%); 
   
   
 }
 
-#tile4{
+#tile-4{
   background-color: hsl(138, 99%, 92%); 
   color: hsl(105, 96%, 23%);
   }
 
-#tile5{
+#tile-5{
    background-color: hsl(9, 96%, 61%);
    color: black;
   
 }
 
-#tile6{
+#tile-6{
   background-color: #DCAE1D; 
   
  
 }
-#tile7{
+#tile-7{
   background-color: hsl(9, 96%, 61%);
   
 }
 
-#tile8{
+#tile-8{
   background-color:  hsl(195, 70%, 54%); 
   
 }
   
-#tile9{
+#tile-9{
   background-color:  hsl(293, 69%, 32%);
   
 }
@@ -155,7 +160,30 @@
     padding: 15%;
     
   }
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [id*="tile-"] {
+        width: 45%;
+        height: 30%;    
+    }
+   #right {
+   margin-top: 15%;
+   margin-bottom: 15%;
+    
+    
+  }
+  footer {
+    position: relative;
+    top: 50%;
+  }
+  .tile[v2] {
+    height: calc(63% - 4px);
+}
 
+.tile[h2] {
+    width: 45%;
+}
+  } 
 </style>
 
 </head>
@@ -171,15 +199,15 @@
 
 <div class="container-fluid" id="right">
 
- <div  class="container tile" id="tile1" v2 h2>1</div>
-  <div class="container tile" id="tile2"><i class="fa fa-info-circle"></i></div>
-  <div class="container tile" id="tile3"><i class="fa fa-envelope-o"></i></div> 
-   <div class="container tile"  id="tile4"><i class="fa fa-free-code-camp"></i></div>
-  <div class="container tile" id="tile5"><i class="fa fa-codepen"></i></div> 
-  <div class="container tile" id="tile6">6</div>
-  <div class="container tile" id="tile7">7</div>
-   <div class="container tile" id="tile8">8</div>
-  <div class="container tile" id="tile9">9</div>
+ <div  class="container tile" id="tile-1" v2 h2>1</div>
+  <div class="container tile" id="tile-2"><i class="fa fa-info-circle"></i></div>
+  <div class="container tile" id="tile-3"><i class="fa fa-envelope-o"></i></div> 
+   <div class="container tile"  id="tile-4"><i class="fa fa-free-code-camp"></i></div>
+  <div class="container tile" id="tile-5"><i class="fa fa-codepen"></i></div> 
+  <div class="container tile" id="tile-6">6</div>
+  <div class="container tile" id="tile-7">7</div>
+   <div class="container tile" id="tile-8">8</div>
+  <div class="container tile" id="tile-9">9</div>
  
   
 
