@@ -3,7 +3,7 @@ $(document).ready(function(){
   document.getElementById("about").style.display = "none";
   
    
-   $('#tile3').click(function() {
+   $('#tile-3').click(function() {
         $("#right").hide();
         $("#about").show();
    
