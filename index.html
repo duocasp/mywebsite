@@ -1,67 +1,65 @@
- <!--<!DOCTYPE html> -->
+ <!DOCTYPE html>
 <html>
 <head>
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <!-- <meta name="viewport" content="width=1024">-->
+ <!--<meta name="viewport" content="width=1024"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet" type="text/css">
    <link href="https://fonts.googleapis.com/css?family=Rokkitt" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	
-	<script src="https://duocasp.github.io/mywebsite/tile.js"></script>
+  
+  <script src="https://duocasp.github.io/mywebsite/tile.js"></script>
 
 <style>
  
  html,body{
-   background: url("http://www.duocasp.xyz/bground3.jpg");
-   background-position: center center;  
-   background-color: hsl(152, 63%, 40%);
-   height: 100%;
+   //background: //url("http://www.duocasp.xyz/bgr//ound3.jpg");
+   //background-color: #FFFD00;
+   background: linear-gradient(90deg,#FFFD00, #FFF384,#7A6E00);
+
+  // background-position: center center;  
+  height: 100%;
  }
  
  footer{
    position: fixed;
    bottom: 0;
-  
+   background-color: black;
    color: #f5f5f5 ; 
-   text-align: left;
-   padding-left: 5%;
+   text-align: center;
+   margin-left: 73%;
+  
    padding-top: 1%;
-   width: 100%;
+   margin-right: 12%;
+   width: 20%;
    font-size: 15px;
    font-family: "Rokkitt", Times, serif;
  }
  .heading{
    position: fixed;
    top: 0;
-  
-   color: #FFFD00;
-   text-align: left;
-   padding-left: 5%;
-   padding-top: 1%;
-   width: 100%;
+   color: #65CB4F;
+   background-color: black;
+   text-align: center;
+   
+  margin-left: calc(10% + 5px);
+
+   padding-top: 2%;
+   width: 20%;
    font-size: 23px;
    font-family: "Rokkitt", Times, serif;
  }
  
- #left{
-  margin-top: 5%;
-  margin-left: 5%;
-  width: 35%;
-  height: 80%;
-  float: left;
- 
-  color: green;
- }
- 
  #right{
-  margin-top: 7%;
-  margin-right: 5%;
-  width: 90%;
-  height: 75%;
-  float: right;
+  //margin: auto;
+   margin-top: 8%;
+   margin-bottom: 7%;
+   margin-right: 6%;
+  width: 85%;
+  height: 70%;
+ float: right;
   color: black;
  
  }
@@ -81,7 +79,8 @@
    outline: none;
    text-align: center; 
    color: white;
-   font-size: 5.5vw;
+   font-size: 3.5vw;
+   font-family: "Rokkitt", Times, serif;
    
    
 }
@@ -100,51 +99,62 @@
    
    
 }
+  
+  .tile p{
+    font-size: 50%;
+    text-align: center;
+    
+    
+  }
 
 #tile-1{
-  background-color: hsl(128, 75%, 56%); 
+  background-color: black;//hsl(128, 75%, 56%); 
   
   
 }
 
+  
+  
 #tile-2{
- background-color: hsl(128, 75%, 56%);
+ background-color: black; //hsl(128, 75%, 56%);
+  color: rgb(101, 203, 79);
  
 }
+   
+  
 #tile-3{
-  background-color:  hsl(195, 70%, 54%); 
-  
-  
+  background-color:  black;//hsl(195, 70%, 54%); 
 }
 
+  
 #tile-4{
   background-color: hsl(138, 99%, 92%); 
   color: hsl(105, 96%, 23%);
   }
 
 #tile-5{
-   background-color: hsl(9, 96%, 61%);
-   color: black;
+   background-color: black;//hsl(9, 96%, 61%);
+   color: white;
   
 }
 
 #tile-6{
-  background-color: #DCAE1D; 
+  background-color: black;//#DCAE1D; 
   
  
 }
 #tile-7{
-  background-color: hsl(9, 96%, 61%);
+  background-color: black;//hsl(9, 96%, 61%);
   
 }
 
 #tile-8{
-  background-color:  hsl(195, 70%, 54%); 
+  background-color:  black;//hsl(195, 70%, 54%); 
   
 }
   
 #tile-9{
-  background-color:  hsl(293, 69%, 32%);
+  background-color:  black;//hsl(293, 69%, 32%);
   
 }
   
@@ -157,7 +167,7 @@
   }
   
   i{
-    padding: 15%;
+    padding-top: 15%;
     
   }
 @media only screen and (max-width: 768px) {
@@ -183,15 +193,27 @@
 .tile[h2] {
     width: 45%;
 }
+  .heading{
+    width: 100%;
+    margin-left: 0;
+  }
+   
+  #tile-1{
+    width: 92%;
+  }
+  #tile-8{
+    width:92%;
+  }
+  
   } 
 </style>
 
 </head>
 <body>
  
-<div class="heading">
+<div class="container-fluid heading">
 <header>
- <p>d u OC a s p</p>
+  <p> d u OC a s p</p>
 </header>
 
 </div>
@@ -200,14 +222,15 @@
 <div class="container-fluid" id="right">
 
  <div  class="container tile" id="tile-1" v2 h2>1</div>
-  <div class="container tile" id="tile-2"><i class="fa fa-info-circle"></i></div>
-  <div class="container tile" id="tile-3"><i class="fa fa-envelope-o"></i></div> 
-   <div class="container tile"  id="tile-4"><i class="fa fa-free-code-camp"></i></div>
-  <div class="container tile" id="tile-5"><i class="fa fa-codepen"></i></div> 
+  <div class="container tile" id="tile-2"><i class="fa fa-info-circle"></i><p>About Me</p></div>
+  <div class="container tile" id="tile-3"><i class="fa fa-envelope-o"></i><p>Message Me</p></div> 
+   <div class="container tile"  id="tile-4"><i class="fa fa-free-code-camp"></i><p>FreeCodeCamp Course</p></div>
+  <div class="container tile" id="tile-5"><i class="fa fa-codepen"></i><p>CodePen Projects</p></div> 
   <div class="container tile" id="tile-6">6</div>
   <div class="container tile" id="tile-7">7</div>
-   <div class="container tile" id="tile-8">8</div>
-  <div class="container tile" id="tile-9">9</div>
+   <div class="container tile" id="tile-8" h2>8</div>
+  
+  <!--<div class="container tile" id="tile-9">9</div> -->
  
   
 
@@ -219,9 +242,9 @@
   dhhd
   
   </div>
-
+<!--
 <footer>
-  <p>oduscasper 2018</p>
-</footer>
+  <p>oduscasper© 2018</p>
+</footer> -->
 </body>
 </html>
