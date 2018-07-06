@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!--<meta name="viewport" content="width=1024"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet" type="text/css">
+   <link href="https://fonts.googleapis.com/css?family=Rokkitt" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+<!--  <script src="https://duocasp.github.io/mywebsite/tile.js"></script> -->
+
+<style>
+  
+  html,body{
+   
+  height: 100%;
+ }
+  
+  #left{
+    background-color: #FFFD00;
+    width: 50%;
+    height: 100%;
+    left: 0;
+    position: absolute;
+  }  
+  #right{
+    background: linear-gradient(45deg, black,black,black, gray); 
+    width: 50%;
+    height: 100%;
+    right: 0;
+    position: absolute;
+  }
+  
+  #inLeft{
+     width: 40%;
+     height: 40%;
+     background-color: #DCD200;
+     margin: auto;
+     margin-top: 10%;
+     position: inline;
+      box-shadow: -5px 10px black;
+  } 
+
+.menu{
+   background-color: black;
+   color: white;
+   margin: 1%;
+   padding-left: 10%;
+   padding-top: 2%;
+   width: 80%;
+   height: 15%;
+   float: right;
+   font-size: 2vw;
+   font-family: "Rokkitt", Times, serif;
+    }    
+  #about{
+    
+  }   
+  #projects{
+    
+  }
+  #contact{
+    
+  }
+  img{
+    border-radius: 50%;
+    width: 25%;
+    margin: auto;
+    margin-top: 10%;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    #left{
+       width: 100%;
+       height: 40%;
+       position: relative;
+    }
+    #right{
+      width: 100%;
+      height: 60%;
+      position: relative;
+    }
+    img{
+      position: absolute;
+      margin-left: 3%;
+      margin-top: 15%;
+      z-index: 1;
+    }
+    #inLeft{
+      margin-left: 45%;
+      margin-top: 5%;
+      height: 75%;
+      }
+    .menu{
+      font-size: 3vw;
+      margin: 3%;
+      height: 20%;
+    }
+    
+  }
+</style>
+
+</head>
+<body>
+     <div class="container-fluid" id="left">
+       <img class="img-responsive" src="https://avatars3.githubusercontent.com/u/20097026?s=400&u=eafc44a10507bd13e73ed268e54d071949f541e7&v=4" alt="me">
+          <div id="inLeft">
+          <div class= "menu" id="about">About </div>
+           <div class= "menu" id="projects">Projects </div>
+            <div class="menu" id="contact">Contact </div>
+       </div>
+       
+     </div>
+     
+     <div class="container-fluid" id="right">
+     
+     </div>
+  
+</body>
+</html>
