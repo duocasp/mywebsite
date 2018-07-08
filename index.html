@@ -10,7 +10,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   
-<!--  <script src="https://duocasp.github.io/mywebsite/tile.js"></script> -->
+ <script src="https://duocasp.github.io/mywebsite/portfolio.js"></script>
 
 <style>
   
@@ -59,6 +59,10 @@
   #about{
     
   }   
+  
+  #about:hover {
+    cursor: pointer;
+  }
   #projects{
     
   }
@@ -107,10 +111,172 @@
     text-align: center;
     margin-top: 10%;
   }
+  
+  
+  /* start of profile div css */
+  #profile{
+    margin: auto;
+    background-color: white;
+    color: black;
+    margin-top: calc(2% - 5px);
+    border-radius: 5px;
+    height: 98%;
+    width: 98%;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Rokkitt", Times, serif;
+    
+   }
+  #head{
+    background-color: #FFFD00; 
+    height: 17%;
+    text-align: center;
+    color: black;
+    font-size: 33px;
+    font-family: "Rokkitt", Times, serif;
+  }
+  
+  #img-prof{
+    border-radius: 50%;
+    width: 20%;
+    margin: auto;
+    }
+  
+  h3{
+    
+    padding-top: 10%;
+  }
+  
+  #educ {
+    width: calc(50% - 2px);
+    height: 45%;
+    float: left;
+    
+  }
+  
+  #skills {
+    width: calc(50% - 2px);
+    height: 45%;
+    
+    float: right;
+    
+  }
+  
+  h4{
+    background-color: #DCD200;
+  }
+  
+  
+  #uphr{
+    font-size: 13px;
+  }
+  button{
+    background-color: #DCD200;
+    border-radius: 5px;
+    border: none;
+    
+  }
+ /* end of profile div css*/
+  
+ /* start of left cover  css */
+  .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+ 
+  background-color: #FFFD00;
+  color: #DCD200;
+
+  width: 100%;
+}
+.grid-item {
+  background-color: #FFFD00;
+  font-size: 5vw;
+  text-align: center;
+  
+}
+  
+  img{
+    border-radius: 50%;
+    width: 60%;
+    margin: auto;
+  }
+  
+
+ 
+  .links{
+    background-color: black;
+    color: yellow;
+    
+  }
+  
+  
+  span{
+    font-size: 30%;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    
+    
+  }
+  
+ /*end of left-cover css*/
+  
 </style>
 
 </head>
 <body>
+  <div class="container-fluid" id="left">
+   <div class="grid-container">
+  <div class="grid-item">My</div>
+  
+  </div>
+ 
+  
+  <div class="grid-container">
+  <div class="grid-item"></div>
+  <div class="grid-item"></div>
+    <div class="grid-item"></div>  
+    <div class="grid-item links" id="about" style="border-radius: 6px 6px 0 0;">                 <span>ABOU</span></div>
+    <div class="grid-item"></div>
+  <div class="grid-item"></div>  
+  <div class="grid-item"></div>
+  <div class="grid-item"></div>
+      <div class="grid-item links" id="contact" style="font-size: 2vw; margin-top: 120%;border-radius: 6px 6px 0 0;">C</div>
+  </div>
+  
+<div class="grid-container">
+  <div class="grid-item links" id="projects" style="border-radius: 6px 6px 0 0;">P</div>
+  <div class="grid-item"><img class="img-responsive" src="https://avatars3.githubusercontent.com/u/20097026?s=400&u=eafc44a10507bd13e73ed268e54d071949f541e7&v=4" alt="me"></div>
+  
+  <div class="grid-item">R</div>  
+  <div class="grid-item links" id="about" style="border-radius: 0 0 6px 6px;">T</div> 
+ 
+  <div class="grid-item">F</div>
+  <div class="grid-item">O</div>  
+  <div class="grid-item">L</div>
+  <div class="grid-item">I</div>
+  <div class="grid-item links" id="contact">O</div>  
+  </div>
+    
+    <div class="grid-container">
+  <div class="grid-item"></div>
+  
+  </div>
+ 
+  
+  <div class="grid-container">
+  <div class="grid-item links" id="projects" style="border-radius: 0 0 6px 6px;"><span>rojects</span></div>
+  <div class="grid-item"></div>
+    <div class="grid-item"></div>  
+    <div class="grid-item">                </div>
+    <div class="grid-item"></div>
+  <div class="grid-item"></div>  
+  <div class="grid-item"></div>
+  <div class="grid-item"></div>
+      <div class="grid-item links" id="contact"style="border-radius: 0 0 6px 6px;"><span>ntact<span></div>
+  </div>
+  
+  </div>
+  <!--
      <div class="container-fluid" id="left">
        <img class="img-responsive" src="https://avatars3.githubusercontent.com/u/20097026?s=400&u=eafc44a10507bd13e73ed268e54d071949f541e7&v=4" alt="me">
           <div id="inLeft">
@@ -119,13 +285,36 @@
             <div class="menu" id="contact">Contact </div>
        </div>
        
-     </div>
+     </div>  -->
+  
+  
      
      <div class="container-fluid" id="right">
-       <h2 style="color: #DCD200"> Welcome to my Portfolio</h>
-       <hr>
-       <h4>updated: 07-2018</h3>
-     </div>
+       <h2 id="welcome" style="color: #DCD200"> Welcome to my Portfolio</h2>
+             
+       <div  id="profile">
+       <div id="head">
+       <p> My Profile </p>
+       <img id="img-prof" class="img-responsive" src="https://avatars3.githubusercontent.com/u/20097026?s=400&u=eafc44a10507bd13e73ed268e54d071949f541e7&v=4" alt="me">
+       </div>
+       <h3><strong> Lon Santos </strong></h3> <p>currently works in Sacramento CA as Data Entry/Mail Processor and is seeking for an Entry Level Web Developer job.</p>
+       <div id="educ"><h4><strong>Education</strong> </h4>
+         <p>Bachelor of Science in Computer Science- 2002</p>
+         <p id="uphr">University of Perpetual Help Rizal Alabang-Zapote Road, Pamplona 3, Las Piñas City, 1704 (02) 872-7041
+al.loreto@perpetualdalta.edu.ph
+         <p>FreeCodeCamp</p><p id="uphr">Front-End Development - Ongoing study with Algorithm and Data Structure Certification achived.</p>
+       </div>
+       <div id="skills"><h4><strong>Skills </strong> </h4>
+         
+         
+       </div>
+        
+       <button id="back">Close</button>
+       
+  </div>
+       
+  </div>
+     
   
 </body>
 </html>
